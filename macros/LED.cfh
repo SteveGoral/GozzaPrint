@@ -1,0 +1,27 @@
+[neopixel board_rgb]
+#  To control Neopixel RGB
+pin: hot_end: PA3
+chain_count: 71
+initial_RED: 0.2
+initial_GREEN: 0.2
+initial_BLUE: 0.2
+initial_WHITE: 0.2
+color_order: GRBW
+
+[gcode_macro LED_ON]
+gcode: SET_LED LED=board_rgb RED=0.0 GREEN=0.0 BLUE=0.0 WHITE=0.9 TRANSMIT=1
+
+[gcode_macro LED_OFF]
+gcode: SET_LED LED=board_rgb RED=0.0 GREEN=0.0 BLUE=0.0 WHITE=0.0 TRANSMIT=1
+
+[gcode_macro LED_Dim]
+gcode: SET_LED LED=board_rgb RED=0.0 GREEN=0.0 BLUE=0.0 WHITE=0.1 TRANSMIT=1
+
+[gcode_macro LED_Red]
+gcode: SET_LED LED=board_rgb RED=0.5 GREEN=0.0 BLUE=0.0 WHITE=0.0 TRANSMIT=1
+
+[gcode_macro LED_Green]
+gcode: SET_LED LED=board_rgb RED=0.0 GREEN=0.5 BLUE=0.0 WHITE=0.0 TRANSMIT=1
+
+[gcode_macro LED_Blue]
+gcode: SET_LED LED=board_rgb RED=0.0 GREEN=0.0 BLUE=0.5 WHITE=0.0 TRANSMIT=1
