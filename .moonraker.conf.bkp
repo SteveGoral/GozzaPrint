@@ -40,6 +40,8 @@ initial_green = 0.2
 initial_blue = 0.2
 chain_count = 70
 
+[timelapse]
+
 [octoprint_compat]
 
 [history]
